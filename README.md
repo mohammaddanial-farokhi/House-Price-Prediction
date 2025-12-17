@@ -48,4 +48,15 @@
 ## 🧩 Python Version
 
 این پروژه با نسخه زیر توسعه و تست شده است:
+Python 3.13.5
+پیشنهاد می‌شود دقیقاً از همین نسخه استفاده کنید.
+
+---
+
+# 🛠️ Installation
+
+### 1. Clone project
+```bash
+git clone https://github.com/your-username/house-price-prediction.git
+cd house-price-prediction
 
