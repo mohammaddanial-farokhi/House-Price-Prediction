@@ -1,2 +1,60 @@
-# House-Price-Prediction
-House price prediction system using XGBoost with a Tkinter-based interactive GUI for data entry and results.
+# 🏠 House Price Prediction with XGBoost & Tkinter GUI  
+### A Machine Learning Model + Interactive Desktop Application
+
+این پروژه یک سیستم پیش‌بینی قیمت خانه است که با استفاده از **یادگیری ماشین (XGBoost)** و یک رابط کاربری گرافیکی ساده در **Tkinter** ساخته شده است.  
+کاربر می‌تواند اطلاعات مربوط به خانه (سال فروش، ماه فروش، متراژ، تعداد اتاق‌ها، طبقات، وضعیت بازسازی و …) را وارد کند و مدل قیمت تقریبی خانه را پیش‌بینی می‌کند.
+
+---
+
+## 🏷️ Badges
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10-blue?logo=python" />
+  <img src="https://img.shields.io/badge/Tkinter-GUI-orange?logo=tkinter" />
+  <img src="https://img.shields.io/badge/ML-XGBoost-green?logo=xgboost" />
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  <img src="https://img.shields.io/badge/Status-Active-success" />
+</p>
+
+---
+
+## 🧩 Project Sections
+
+### **🔹 Data Preprocessing**  
+- تبدیل تاریخ فروش به سال، ماه و فصل  
+- استخراج ویژگی‌های اصلی مثل: متراژ، تعداد اتاق‌ها، وضعیت بازسازی، کد پستی و …  
+- ذخیره دیتاست پردازش‌شده در فایل CSV  
+
+### **🔹 Modeling**  
+- استفاده از الگوریتم **XGBoost Regressor**  
+- تقسیم داده‌ها به آموزش و تست (70/30)  
+- ذخیره مدل آموزش‌دیده با `joblib`  
+- معیارهای ارزیابی: RMSE و R²  
+
+### **🔹 GUI (Tkinter Application)**  
+- فرم ورود اطلاعات خانه (سال فروش، ماه فروش، متراژ، تعداد اتاق‌ها و …)  
+- منوهای کشویی برای انتخاب ماه و طبقات  
+- دکمه محاسبه قیمت و نمایش نتیجه پیش‌بینی‌شده  
+
+---
+
+## 📁 Dataset
+لینک دیتاست : https://www.kaggle.com/datasets/arathipraj/house-data
+
+فایل دیتاست باید با نام `house_data.csv` در پوشه اصلی پروژه قرار گیرد.  
+پس از پردازش، فایل جدیدی با نام `processed_mainData.csv` ساخته می‌شود.
+
+---
+
+## 🧩 Python Version
+
+این پروژه با نسخه Python 3.13.5 توسعه و تست شده است، پیشنهاد می‌شود دقیقاً از همین نسخه استفاده کنید.
+
+---
+
+# 🛠️ Installation
+
+### 1. Clone project
+```bash
+git clone https://github.com/your-username/house-price-prediction.git
+cd house-price-prediction
+
